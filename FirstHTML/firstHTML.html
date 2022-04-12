@@ -1,0 +1,102 @@
+<!--Escrevendo meu primeiro codigo em HTML. 
+Este arquivo pode ser aberto no browser por ser um arquivo
+HTML mas só pode ser acessado localmente da minha máquina
+nao tendo um endereço associado-->
+
+<!-- Para começar qualquer documento HTML eh necessario incluir esta linha. 
+Diz qual o tipo de arquivo esta utilizando. eh como a classe do LaTeX-->
+<!DOCTYPE html>
+
+<!--O segundo item obrigatorio do arquivo html eh o elemento html
+existe um padrao de esqueleto do arquivo html a ser seguido e um atalho para contrui-lo
+para criar o esqueleto automaticamente, basta digitar ! em um arquivo html
+IMPORTANTE: eh necessario que o arquivo ja tenha a extensao html-->
+<html>
+
+<!--O elemento head carrega varias coisas que nao serao exibidas na sua pagina-->
+<header>
+    <nav>
+        <!--O elemento <a> eh um anchor element. isso significa que ele cria um hiperlink. pode ser um hiperlink para
+um endereco externo ou para outro arquivo no seu computador.
+IMPORTANTE! caso deseje que o link seja direcionado para uma pagina da web, deve seguir o padrao compreto de endereco
+com o http://www. caso nao utilize isso, o navegador vai entender que deve buscar um arquivo com o nome que for indicado
+dentro do local inicial de trabalho.-->
+
+        <a href="about.html">ABOUT ME</a>
+        <a href="english_text.html">EN</a>
+        <a href="portuguese_text.html">PT</a>
+
+
+        <!-- form element creates a content, a group of input boxes
+        you can check the variety of textypes in https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+        <form action="/search">
+            <input type="text" placeholder="destine">
+            <input type="month">
+            <div>
+                <!-- label utilizado para textos fora do input. associa o label ao input atraves do id. os valores de id em input
+            e de for no label devem ser iguais. serve mais para os screenreaders -->
+                <!-- ********************************************* -->
+                <!--      IMPORTANTE! IDs devem ser unicos!!       -->
+                <!-- ********************************************* -->
+                <!-- the name atribute is something that the server will look for, the name sent to the server. it will be shown in the url.
+                its importante to use name in every input you use on forms -->
+                <input type="checkbox" id="any" name="any" checked>
+                <label for="any">Any Time</label>
+            </div>
+        </form>
+
+        <form action="/login">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <!-- button inside the form will submit the form, will send the informations to the action address -->
+            <button>Login</button>
+        </form>
+        <!-- hijacking Google! We just need to simulate the url that appears when we search  -->
+        <p>
+        <form action="http://www.google.com/search">
+            <input type="text" placeholder="Search on Google" name="q">
+
+            <!-- button inside the form will submit the form, will send the informations to the action address -->
+            <button>Google it!</button>
+        </form>
+        </p>
+
+    </nav>
+</header>
+
+<head>
+    <title>RePensada</title>
+</head>
+
+
+<main>
+
+    <body>
+        <h1>Destinos</h1>
+
+        <ul>
+            <li>
+                <h2>Portugal</h2>
+                <ul>
+                    <li><a href="geres.html">Parque Natural Peneda-Gerês</a></li>
+                </ul>
+
+
+            </li>
+        </ul>
+        <!--o elemento title eh o que vai aparecer escrito na aba do browser e tambem no
+    headline da pesquisa do Google-->
+
+
+
+        <!--<h4>Title 4</h4>
+<p><b>ATENTION:</b> You sould never use a Hn without a Hn-1</p>-->
+    </body>
+</main>
+
+<footer>
+
+
+</footer>
+
+</html>

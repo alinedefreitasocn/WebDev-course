@@ -1,0 +1,9 @@
+/* in css we use the name of the tag or element to stylish it */
+h1 {
+    color: indianred;
+}
+
+button {
+    color: rgb(112, 216, 241);
+    background-color: rgb(115, 40, 236);
+}

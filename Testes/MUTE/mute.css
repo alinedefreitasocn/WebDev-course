@@ -1,0 +1,95 @@
+/* podemos selecionar o item pelo atributo geral, ex. h1, buttom, etc
+pelo id (unico para cada item (e nesse caso usamos #idname no css) ou a classe do
+objeto (nesse caso precisamos expecificar a classe no HTML e no css
+indicamos como .classname)
+decendent elements are marked with a space between then. ex. all ancortag inside a li
+should be stylished like li a {} */
+body {
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header section {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/60cb55d42ff7535258bc0875/3087f5a6-41b6-4c07-a892-02255c315324/MUTE+%28final%29-62.jpg?format=1000w);
+    backgroung-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+h1 {
+    /* text-align: center; */
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    left: 34%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+table {
+    align-tracks: center;
+    width: 100%;
+}
+
+hr {
+    background-color: lightblue;
+    border: 0;
+    height: 2px;
+}
+
+.cabecalho {
+    color: #a88468;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    /* font-family: 'Anton', sans-serif; */
+}
+
+tbody td {
+    width: 50%;
+    padding-left: 5%;
+
+}
+
+
+label {
+    position: sticky;
+}
+
+label:hover {
+    text-shadow: 1px 1px 2px #a88468, 0 0 1em lightskyblue, 0 0 0.2em lightskyblue;
+    ;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    outline: lightskyblue;
+    position: relative;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+/* hover define o que aconece quando se passa o mause sobre o item */
+input[type="checkbox"]:hover {
+    outline: skyblue;
+}
+
+#pedido {
+    align-items: center;
+}
+
+textarea {
+    display: block;
+    border: 2px double #a88468;
+    width: 95%;
+    height: 10em;
+    align-items: center;
+    border-radius: 3%;
+
+}

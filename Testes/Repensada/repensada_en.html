@@ -1,0 +1,71 @@
+<!--Escrevendo meu primeiro codigo em HTML. 
+Este arquivo pode ser aberto no browser por ser um arquivo
+HTML mas só pode ser acessado localmente da minha máquina
+nao tendo um endereço associado-->
+
+<!-- Para começar qualquer documento HTML eh necessario incluir esta linha. 
+Diz qual o tipo de arquivo esta utilizando. eh como a classe do LaTeX-->
+<!DOCTYPE html>
+
+<!--O segundo item obrigatorio do arquivo html eh o elemento html
+existe um padrao de esqueleto do arquivo html a ser seguido e um atalho para contrui-lo
+para criar o esqueleto automaticamente, basta digitar ! em um arquivo html
+IMPORTANTE: eh necessario que o arquivo ja tenha a extensao html-->
+<html>
+
+<!--O elemento head carrega varias coisas que nao serao exibidas na sua pagina-->
+<header>
+    <nav>
+        <!--O elemento <a> eh um anchor element. isso significa que ele cria um hiperlink. pode ser um hiperlink para
+um endereco externo ou para outro arquivo no seu computador.
+IMPORTANTE! caso deseje que o link seja direcionado para uma pagina da web, deve seguir o padrao compreto de endereco
+com o http://www. caso nao utilize isso, o navegador vai entender que deve buscar um arquivo com o nome que for indicado
+dentro do local inicial de trabalho.-->
+
+        <a href="about.html">ABOUT ME</a>
+        <a href="repensada_en.html">EN</a>
+        <a href="repensada.html">PT</a>
+        <link rel="stylesheet" href="repensada_style.css">
+
+    </nav>
+</header>
+
+<head>
+    <title>RePensada</title>
+</head>
+
+
+<main>
+
+    <body>
+
+        <h1 id="destinations"> &#10100; Destinations &#10101;</h1>
+
+        <ul>
+            <li class="first_level_li">
+                <h2>Portugal</h2>
+                <ul>
+                    <li class="second_level_li">
+                        <a href="geres_en.html">Peneda-Gerês Natural Park</a>
+                    </li>
+                </ul>
+
+
+            </li>
+        </ul>
+        <!--o elemento title eh o que vai aparecer escrito na aba do browser e tambem no
+    headline da pesquisa do Google-->
+
+
+
+        <!--<h4>Title 4</h4>
+<p><b>ATENTION:</b> You sould never use a Hn without a Hn-1</p>-->
+    </body>
+</main>
+
+<footer>
+
+
+</footer>
+
+</html>
