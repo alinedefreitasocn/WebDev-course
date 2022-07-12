@@ -1,0 +1,86 @@
+Web developer course
+
+HTML: hiper text Markup language. Não implementa logica, só marking up a text.
+foi criado para organizar a estrutura de artigos científicos 
+pega textos e estrtura (parece um pouco com LaTeX). São as 
+regras de display de cada parte da página.
+
+"make this part bold", "Make this part a link", 
+"Make this a paragraph". It really looks like a little like LaTeX
+
+HTML elements:
+<p> element </p> - paragraph
+<h1> element </h1> - main header on a page
+<img> element </img> - embeds an image
+<form> element </form> - represents a form
+
+MDN: Mozilla Developer Network. Como o PEP8 do Python. Usar como referencia.
+
+Aula: HTML Boilerpplate (HTML Skeleton)
+<!DOCTYPE html> - diz que foi escrito em HTML
+Tudo que está entre <> se chama elemento.
+<html> é um elemento html também chamado de Root element
+Sempre se deve começar um documento html por esse elemento e tudo da pagina deve estar dentro dele.
+
+<html>
+Deve sempre ter um head e um body entre os elementos html
+</html>
+
+<head> contém metadado, Nada do que vai dentro do Head aparece na página. Entra a chamada pro CSS e Java files e outras funções.
+<title></title> : É no head que especificamos o title do HTML. O title é o que se vê na aba do navegador e também o que se vê no título do link quando fazemos a busca no Google. Pode não ter nada a ver com o Título ilustrado que se vê na página.
+
+HTML não precisa de identação, mas pode usar para manter organizado.
+
+só se pode ter um body dentro do HTML. Então o básico (esqueleto) de um arquivo HTML será:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nome que aparece na aba do browser </title>
+        outros links de scripts e funções e coisas que não aparecem na página vão entrar aqui
+    <head>
+    <body>
+        Todo os elementos que serão apresentados na página entram aqui.
+    </body>
+</html>
+
+
+É uma coisa tão básica que existe um atalho no VStudio para criar essa estrutura. Só digitar ! no VS. Só funciona em documentos com extensão .html
+
+
+Aula: VSCode Tip: Auto-Format
+
+Para auto-formatar o .html e deixar organizadinho e mais fácil de ler.
+
+ctrl + shift + p no VS vai abrir a aba de busca de comandos (bem legal!) e buscar por Format Document
+
+Aula: List Elements
+Podem ser não ordenadas (bullet lists) <ul> ou ordenadas (listas numeradas) <ol>. Dentro do elemento lista vem o elemento item descrito pelo elemento <li> (list item).
+Então a estrutura de uma lista seria:
+
+Para uma bullet list:
+<ul>
+    <li> item </li>
+    <li> item </li>
+    <li> item </li>
+    <li> item </li>
+    <li> item </li>
+</ul>
+
+Para uma lista numerada:
+<ol>
+    <li> item 1 </li>
+    <li> item 2 </li>
+</ol>
+
+<li> elements devem estar sempre dentro de <ul> ou <ol>
+
+Pode-se criar listas dentro de listas:
+
+<ul>
+    <li> blah
+        <ul>
+        <li> item </li>
+        </ul>
+    </li>
+</ul>

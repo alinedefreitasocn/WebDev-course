@@ -1,0 +1,127 @@
+<h1> Web developer course </h1>
+
+HTML: hiper text Markup language. Não implementa logica, só marking up a text.
+foi criado para organizar a estrutura de artigos científicos
+pega textos e estrtura (parece um pouco com LaTeX). São as
+regras de display de cada parte da página.
+
+"make this part bold", "Make this part a link",
+"Make this a paragraph". It really looks like a little like LaTeX
+
+HTML elements:
+<p> element </p> - paragraph
+<h1> element </h1> - main header on a page
+<img> element </img> - embeds an image
+<form> element </form> - represents a form
+
+MDN: Mozilla Developer Network. Como o PEP8 do Python. Usar como referencia.
+
+<h2> Aula: HTML Boilerpplate (HTML Skeleton) </h2>
+<!DOCTYPE html> - diz que foi escrito em HTML
+Tudo que está entre <> se chama elemento.
+    <html> é um elemento html também chamado de Root element
+    Sempre se deve começar um documento html por esse elemento e tudo da pagina deve estar dentro dele.
+
+    <html>
+    Deve sempre ter um head e um body entre os elementos html
+
+    </html>
+
+    <head> contém metadado, Nada do que vai dentro do Head aparece na página. Entra a chamada pro CSS e Java files e
+        outras funções.
+        <title></title> : É no head que especificamos o title do HTML. O title é o que se vê na aba do navegador e
+        também o que se vê no título do link quando fazemos a busca no Google. Pode não ter nada a ver com o Título
+        ilustrado que se vê na página.
+
+        HTML não precisa de identação, mas pode usar para manter organizado.
+
+        só se pode ter um body dentro do HTML. Então o básico (esqueleto) de um arquivo HTML será:
+        <title> Nome que aparece na aba do browser </title>
+        outros links de scripts e funções e coisas que não aparecem na página vão entrar aqui
+
+    </head>
+
+
+    <body>
+        Todo os elementos que serão apresentados na página entram aqui.
+    </body>
+
+    </html>
+
+
+    É uma coisa tão básica que existe um atalho no VStudio para criar essa estrutura. Só digitar ! no VS. Só
+    funciona em documentos com extensão .html
+
+
+    <h2> Aula: VSCode Tip: Auto-Format </h2>
+
+    Para auto-formatar o .html e deixar organizadinho e mais fácil de ler.
+
+    ctrl + shift + p no VS vai abrir a aba de busca de comandos (bem legal!) e buscar por Format Document
+
+    
+
+                        <h2>Aula: Anchor Elements </h2>
+                        <a> element usado para criar hiperlinks para endereços externos ou elemntos dentro do
+                            próprio arquivo.
+                            Precisa de um atributo, que no caso do HTML vai dentro do próprio elemento. No caso do
+                            hiperlink é necessário um atributo chamado href que é usado da seguinte forma:
+
+                            <a href="http://www.link.com">Website</a>
+
+                            DETALHE IMPORTANTE! Se não especificar o site completo, com http://www, o hiperlink vai
+                            buscar um arquivo dentro do local onde está o seu html original.
+
+                            Se quiser o hiperlink também pode ser indicado para abrir outro arquivo HTML que deve
+                            estar no mesmo caminho do html original.
+
+
+                            <div>Divide uma secao, agrupa um numero de elementos para fazer como uma box.</div>
+
+                            <span>naao entendi. eh uma forma de chamar alguma coisa para diferenciar o estilo. eh
+                                como o div mas inline. vai fazer mais sentido quando aprendermos sobre CSS</span>
+
+                            <!-- *************************************************  -->
+                            <!--    AULA CHECKBOXES, RADIOBUTTONS AND SELECT        -->
+                            <!-- *************************************************  -->
+
+                            <!-- qual a diferença entre o ID e o Name de um input?
+
+when using radio buttom, if you give the same name to each one of them, they will gonna be connected.and will be exclusive (like when you select one, the others are automatically deselected)
+
+<!-- exemplo de checkbox -->
+                            <h2>Radio Buttom</h2>
+                            <form action="/birds">
+                                <!-- creating the checkbox -->
+                                <input type="checkbox" name="agree_tos" id="agree">
+                                <!-- creating tha label to the checkbox -->
+                                <label for="agree">I agree to everything!</label>
+                            </form>
+
+                            <!-- criando um exemplo de radio button -->
+                            <p>
+                                <label for="xs">XS</label>
+                                <!-- in this case, type says what type of input I will have (radio), name group inputs together (in case of radio, you can only select one of the lis), id will link the radio button and the label, value will pass a value to the server when the form is submitted -->
+                                <input type="radio" name="size" id="xs" value="xs">
+                                <label for="s">S</label>
+                                <input type="radio" name="size" id="s" value="s">
+                                <label for="m">M</label>
+                                <input type="radio" name="size" id="m" value="m">
+
+
+                            </p>
+
+                            On radio (and probably on checkbox also) you can set a parameter called value, wich will
+                            be the value passed to the browser when you submit the form -->
+
+                            <!-- check boxes answer is just yes or no, on or off -->
+
+                            <!-- select eh um dropdown list composto por dois elementos: o select e os itens da lista -->
+
+                            <select name="pets" id="pets_select">
+                                <option value=""> -- please select and option -- </option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="sharks">Sharks</option>
+                                <option value="turtle">Turtle</option>
+                            </select>

@@ -1,0 +1,42 @@
+<!-- This was an exercise of table -->
+<table>
+    <!-- thead eh o cabecalho mas na verdade so separa do corpo
+    quem faz ficar com cara de head eh o th 
+    no caso desse exemplo, a tabela tem duas linhas de cabecalho-->
+    <thead>
+        <!-- tr significa uma linha da tabela (table row) -->
+        <tr>
+            <!-- rowspan faz o titulo ocupar x linhas -->
+            <!-- colspan faz o titulo ocupar x colunas
+            e compartilhar com as de baixo -->
+            <!-- th cria uma cedula tipo cabecalho -->
+            <th rowspan="2">Subscription</th>
+            <th colspan="2">Price</th>
+            <th rowspan="2">Support</th>
+        </tr>
+        <!-- segunda linha de titulos do cabecalho da tabela -->
+        <tr>
+            <th>R&#36;</th>
+            <th>&euro;</th>
+        </tr>
+    </thead>
+    <!-- aqui comecam as cedulas de corpo da tabela -->
+    <tbody>
+        <tr>
+            <!-- cada td eh um table data -->
+            <td>Free</td>
+            <td>Free</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Personal</td>
+            <td>$9.99</td>
+            <td>Weekdays</td>
+        </tr>
+        <tr>
+            <td>Business</td>
+            <td>$49.99</td>
+            <td>24/7</td>
+        </tr>
+    </tbody>
+</table>

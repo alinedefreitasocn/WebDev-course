@@ -1,0 +1,165 @@
+/* Start reseting our css */
+/* added a new file called reset for this */
+/* Its not obligatory but its nice to use it */
+/* this exercise is bases on Travis Willis page */
+/* After reseting, lets start our styling */
+html {
+    /* when we set the size of the element we are including the border on the
+    total size */
+    box-sizing: border-box;
+    /* lets define our font family. Its already refered in
+the html file (line 8) */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* the body styling */
+
+body {
+    background-color: #60a9ff;
+    /* transform the body into a flexbox and the class panel-pricing is
+    inside this flexbox */
+    display: flex;
+    /* we can align the iten of the body, which is the panel-pricing
+    in the flexbox using justify-content and aligh-items */
+    justify-content: center;
+    align-items: center;
+    /* dont really know what it does. need to search */
+    min-height: 100vh;
+}
+
+.panel-pricing-table {
+    background-color: white;
+    /* making the corners round */
+    border-radius: 10px;
+    /* adding some space between the elementes and the border 
+    of the box (top and bottom) (left and right) */
+    padding: 15px 25px;
+    /* making the width to be 100% of its parent (the whole page) */
+    width: 100%;
+    /* but also setting the max width as 960px
+    means the box takes 100% of the page width until it reaches
+    the max-width value */
+    max-width: 960px;
+
+    /* we will start defining the mobile layout style
+    then making it different when you have a larger screen */
+
+    /* lets also make our pricing table as a flexbox to organize
+    the itens inside of it */
+    display: flex;
+    /* the default of flex is to organize items as row, but we want it as a column */
+    flex-direction: column;
+
+    /* centering all of the itens in panel */
+    text-align: center;
+    /* making everything uppercase */
+    text-transform: uppercase;
+}
+
+/* adding a border to each section of pricing plan */
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/* we dont want the last pricing plan to have a bottom border
+so we can use the last-child function */
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+/* adding margin to the image so it gets a little bit away from the text*/
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* styling the pricing header */
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* pricing features is a ul with two li inside */
+.pricing-features {
+    /* adding 50px space on the top, nothing on the side and 25 on the
+    bottom */
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+/* selecting each of the li items on the ul */
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+/*  the price text is a span (I dont remember what it means...) */
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* The pricing buttom is actualy an ancor tag */
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    /* padding add space inside the border of the object */
+    padding: 15px 35px;
+    text-decoration: none;
+    /* margin add space outside the border.
+    add some space between the object and others */
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+/* what is the focus? */
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+/* The featured buttom has a different name */
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+/* adding some effects when is hover or focus */
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #269aff;
+    color: white;
+}
+
+
+/* now lets make the large page version */
+@media (min-width: 900px) {
+    .panel-pricing-table {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}

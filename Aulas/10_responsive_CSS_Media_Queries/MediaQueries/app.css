@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+/* nav was already seppareted into a ref, a ul and 
+another a ref. so its three itens, its easy to organize them
+using flexbox. 
+space between distribute them equaly thru the space,
+with the home buttom in one side, the sign up in the 
+other and the ul in the middle of the page.*/
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* not so used, need to be exactly the size
+@media (width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* kind of commom */
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* remember that the order of the sizes needs to be from smallest to biggest  */
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orangered;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+/* @media (orientation: landscape) {
+ body {
+     background-color: magenta;
+ }
+} */
+
+/* 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+} */
+
+/* avoiding H1 to break into two lines */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+/* working on the nav bar */
