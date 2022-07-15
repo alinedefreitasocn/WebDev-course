@@ -2,14 +2,27 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 body{
     font-family: 'Edu NSW ACT Foundation', cursive;
+    background-color: #72d6f4;
+    /* background-color: #7bdff2;  */
+    color: #3a0ca3;
 }
+nav {
+    background-color: #65d4f5;
+}
+
+.navbar {
+    navbar-color: #7209b7;
+}
+
 h1 {
     font-family: 'Splash', cursive;
+    color: #7209b7;
     /* font-family: 'Bad Script', cursive; */
     /* font-family: 'Nothing You Could Do', cursive; */
-    
 }
