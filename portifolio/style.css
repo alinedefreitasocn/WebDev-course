@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+h1 {
+    font-family: 'Splash', cursive;
+    /* font-family: 'Bad Script', cursive; */
+    /* font-family: 'Nothing You Could Do', cursive; */
+    
+}
